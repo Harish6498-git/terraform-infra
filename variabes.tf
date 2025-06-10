@@ -27,3 +27,9 @@ variable "availability_zones" {
   type        = list(string)
   default     = ["us-east-2a", "us-east-2b", "us-east-2c"]
 }
+
+variable "db_username" {
+  description = "RDS master username"
+  type        = string
+  default     = "admin"
+}
